@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- colours -->
+    <color name="colour_primary">@color/core_purple</color>
+    <color name="colour_primary_dark">#b2000000</color>
+    <color name="colour_accent">@color/core_orange</color>
+
+    <!-- core brand colours -->
+    <color name="core_blue">#2C86F2</color>
+    <color name="core_teal">#25EFC8</color>
+    <color name="core_orange">#FF9E29</color>
+    <color name="core_purple">#A170E8</color>
+
+    <!-- secondary brand colours -->
+    <color name="secondary_blue">#6BA3DF</color>
+    <color name="secondary_blue_light">#EEF6FC</color>
+    <color name="secondary_gray_light">#919191</color>
+    <color name="secondary_gray_dark">#595959</color>
+
+    <!-- Generic shades -->
+    <color name="generic_white">#FFFFFF</color>
+    <color name="generic_black">#000000</color>
+
+    <color name="generic_shaded">#96000000</color>
+    <color name="generic_transparent">#00ffffff</color>
+
+    <!-- Fab colours -->
+    <color name="fab_ripple">#39000000</color>
+</resources>

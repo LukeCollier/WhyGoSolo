@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.SearchFragment">
+    <RelativeLayout
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/generic_white">
+
+        <EditText style = "@style/text_search_box"
+            android:id="@+id/text_search_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message_search"
+            android:singleLine="true"
+            android:layout_toStartOf="@+id/button_drop_down"
+            android:layout_alignRight="@+id/button_drop_down"
+            android:layout_alignEnd="@+id/button_drop_down" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/button_drop_down"
+            android:background="@color/generic_transparent"
+            android:src="@drawable/ic_text_drop_down"
+            android:onClick="onArrowDropDown"
+            android:contentDescription="@string/message_advance_search"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_box"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/view_advance_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/search_box"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/generic_white"
+            android:padding="32sp">
+
+            <TextView
+                android:id="@+id/text_sort_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message_sort_distance"
+                android:textSize="18sp"
+                android:textColor="@color/generic_black"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false" />
+
+            <Spinner
+                android:id="@+id/spinner_distance"
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/text_sort_distance"
+                android:layout_toEndOf="@+id/text_sort_distance" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/generic_white"
+            android:padding="32sp">
+
+            <TextView
+                android:id="@+id/text_sort_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message_sort_category"
+                android:textSize="18sp"
+                android:textColor="@color/generic_black"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/text_sort_category"
+                android:layout_toEndOf="@+id/text_sort_category" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_advance_search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/generic_white"
+        android:visibility="visible"
+        android:orientation="horizontal">
+        <ProgressBar style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="left"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/text_progress"
+            android:text="@string/message_events_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/medium_text"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+</RelativeLayout>

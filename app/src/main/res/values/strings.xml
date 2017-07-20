@@ -1,0 +1,109 @@
+<resources>
+    <!-- Top name -->
+    <string name="app_name">Why Go Solo?</string>
+
+    <!-- Log in layout -->
+    <string name="message_username">Username</string>
+    <string name="message_password">Password</string>
+
+    <string name="action_access">Can\'t access your account?</string>
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+
+    <!-- Register layout -->
+    <string name="hint_reenter_password">Re-type Password</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_biography">Biography (Optional)</string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_last_name">Last name</string>
+
+    <!-- Recover layout -->
+    <string name="message_forgotten_password">Forgotten Password?</string>
+    <string name="message_forgotten_username">Forgotten Username?</string>
+
+    <!-- Recover_pw layout -->
+    <string name="message_recover_email_1">To reset your password enter your email</string>
+    <string name="message_recover_email_2">An email will be sent to you with a link to reset your password</string>
+
+    <!-- Recover_username layout -->
+    <string name="message_recover_email_3">To find your username enter your email</string>
+    <string name="message_recover_email_4">The username matching the entered email will be sent to you</string>
+
+    <!-- Tab strings -->
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- Create event strings -->
+    <string name="title_create_event">Create an Event</string>
+    <string name="message_event_name">Event Name *</string>
+    <string name="message_event_location">Location *</string>
+    <string name="message_event_category">Category</string>
+    <string name="message_event_create">Create event</string>
+    <string name="message_event_from_date">From date *</string>
+    <string name="message_event_from_time">From time *</string>
+    <string name="message_event_to_date">To date *</string>
+    <string name="message_event_to_time">To time *</string>
+    <string name="message_event_description">Description</string>
+    <string name="message_event_to">To</string>
+    <string name="message_event_from">From</string>
+
+    <!-- TODO: Placeholder text for the different fragments, flesh them out -->
+    <string name="message_home_fragment">You are now on the home page…</string>
+    <string name="message_search_fragment">You are now on the search page…</string>
+    <string name="message_profile_fragment">You are now on the profile page…</string>
+    <string name="message_settings_fragment">You are now on the settings page…</string>
+
+    <!-- List of categories for the -->
+    <string-array name="array_categories">
+        <item>Sport</item>
+        <item>Music</item>
+        <item>Pub</item>
+        <item>Food</item>
+        <item>Outdoor</item>
+    </string-array>
+
+    <string-array name="array_search_options">
+        <item>None Set</item>
+        <item>Distance</item>
+        <item>Category</item>
+        <item>Alphabetically</item>
+    </string-array>
+
+    <string-array name="array_distances_options">
+        <item>Nearest to you</item>
+        <item>20 Miles Away</item>
+        <item>50 Miles Away</item>
+        <item>Furthest Away</item>
+    </string-array>
+
+    <string name="title_picture_options">New profile picture</string>
+    <string-array name="array_profile_options">
+        <item>Take a picture</item>
+        <item>Select one from a gallery</item>
+    </string-array>
+
+    <string name="message_event_formatted">%1$-25s%2$s\n%3$-25s%4$s\n%5$-25s%6$s</string>
+    <string name="message_search">Keyword…</string>
+    <string name="message_advance_search">The dropdown button for advance search</string>
+    <string name="message_picture_event">picture_event</string>
+    <string name="title_event">Event title</string>
+    <string name="message_sponsored">Sponsored</string>
+    <string name="message_sort_distance">Sort by distance</string>
+    <string name="message_sort_category">Sort by category</string>
+    <string name="message_sort_by">Sort by</string>
+    <string name="message_delete_sort">Delete filter</string>
+
+    <string name="action_attend">Attend</string>
+
+    <string name="message_events_loading">Finding Events. Please wait…</string>
+    <string name="message_events_search">Please enter search terms…</string>
+    <string name="error_no_results">Your search returned no results</string>
+
+    <!-- Create beacon layout -->
+    <string name="location_hint"><i>Location</i></string>
+    <string name="description_icon_phone">phone icon</string>
+    <string name="description_icon_email">email icon</string>
+    <string name="descriptor_event_picture">A event picture</string>
+
+</resources>

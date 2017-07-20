@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="epsilon.whygosoloapplication.activities.ViewEventActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_event_picture"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_fab_event"
+        android:background="@color/secondary_gray_light"
+        android:contentDescription="@string/descriptor_event_picture" />
+
+    <TextView style="@style/text_title"
+        android:id="@+id/text_event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_below="@+id/image_event_picture"
+        android:layout_centerHorizontal="true" />
+
+    <TextView style="@style/header"
+        android:id="@+id/text_event_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location_hint"
+        android:layout_below="@+id/text_event_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        android:textSize="@dimen/medium_text"/>
+
+    <TextView style="@style/header"
+        android:id="@+id/text_event_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_event_from_date"
+        android:layout_below="@+id/text_event_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        android:textSize="@dimen/medium_text"/>
+
+    <TextView
+        style="@style/paragraph"
+        android:id="@+id/text_event_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_event_description"
+        android:layout_below="@+id/text_event_start_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp" />
+
+    <Button android:theme="@style/button_generic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_attend"
+        android:id="@+id/button_attend"
+        android:layout_below="@+id/text_event_description"
+        android:layout_centerHorizontal="true"
+        android:onClick="onAttendClick"/>
+    </RelativeLayout>
+</ScrollView>

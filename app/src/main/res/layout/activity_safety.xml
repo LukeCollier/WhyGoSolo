@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="epsilon.whygosoloapplication.activities.SafetyActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView style = "@style/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Safety Tips"
+                android:id="@+id/header1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="We recommend that the users of our network follow a few basic tips when using the app to meet people online or offline.
+                \nTake a few minutes to read the following safety tips to make sure your WhyGoSolo experience is enjoyable and safe."
+                android:id="@+id/text1"
+                android:layout_below="@+id/header1"
+                android:layout_alignLeft="@+id/header1"
+                android:layout_alignStart="@+id/header1"
+                android:layout_marginTop="5dp"/>
+
+            <TextView style = "@style/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Safety Tips for Meeting Offline"
+                android:id="@+id/header2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/medium_text"
+                android:layout_below="@+id/text1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- Always meet in public. Meet for the first time in a populated, public location — never in a private or remote location.
+                \n- Tell a friend. Inform a friend or family member of your plans and when and where you’re going. If you own a mobile phone, make sure you have it with you.
+                \n- Stay sober. Do not do anything that would impair your judgment and cause you to make a decision you could regret.
+                \n- Drive yourself to and from the event. Just in case things don’t work out, you need to be in control of your own ride—even if you take a taxi.
+                \n- Don’t leave personal items unattended. You don’t want to risk having personal information stolen. If you’re drinking, keep your drink with you at all times so it can’t be tampered with.
+                \n- Stay in a public place. "
+                android:id="@+id/text2"
+                android:layout_below="@+id/header2"
+                android:layout_alignLeft="@+id/header1"
+                android:layout_alignStart="@+id/header1"
+                android:layout_marginTop="5dp"/>
+
+            <TextView style = "@style/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Safety Tips for Online"
+                android:id="@+id/header3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/medium_text"
+                android:layout_below="@+id/text2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="NEVER share your personal or financial information with people you don’t know. Make sure to follow these guidelines at all times when meeting new people online:
+                \n\n- Don’t ever send money to someone you meet online, even if they're offering concert tickets to an event you're both attending it's better to buy in person and then you can see what you're getting for your money.
+                \n- Don’t give out your credit card number or bank info.
+                \n- Don’t share your personal info, such as address, phone number, etc."
+                android:id="@+id/text3"
+                android:layout_below="@+id/header3"
+                android:layout_alignLeft="@+id/header1"
+                android:layout_alignStart="@+id/header1"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="At WhyGoSolo we care very much about our community and invest in fraud detection systems to protect you. However, even with these measures, we also need your help!
+                \nReport any suspicious activity or behavior to us at reports@WhyGoSolo.com immediately."
+                android:id="@+id/text4"
+                android:layout_below="@+id/text3"
+                android:layout_alignLeft="@+id/header1"
+                android:layout_alignStart="@+id/header1"
+                android:layout_marginTop="25dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

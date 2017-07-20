@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/view_advance_search"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/editText"
+    android:background="@color/generic_white"
+    android:padding="32sp"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/text_sort_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_sort_by"
+        android:textSize="18sp"
+        android:textColor="@color/generic_black"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinner_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_toEndOf="@+id/text_sort_by"
+        android:layout_toStartOf="@+id/button_remove"/>
+
+    <ImageButton
+        android:id="@+id/button_remove"
+        android:layout_width="64sp"
+        android:layout_height="64sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_button_clear"
+        android:background="@color/generic_transparent"
+        android:tint="@color/core_orange"
+        android:contentDescription="@string/message_delete_sort" />
+
+</RelativeLayout>

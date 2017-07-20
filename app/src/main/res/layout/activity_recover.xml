@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/forgotten_pw_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/message_forgotten_password"
+        android:textColor="@color/secondary_gray_light"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginStart="84dp"
+        android:layout_below="@+id/image_logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/forgotten_username_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/message_forgotten_username"
+        android:textColor="@color/secondary_gray_light"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignBottom="@+id/radioGroup"
+        android:layout_alignRight="@+id/forgotten_pw_lbl"
+        android:layout_alignEnd="@+id/forgotten_pw_lbl" />
+
+    <Button
+        android:theme="@style/button_generic"
+        android:id="@+id/button_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginTop="71dp"
+        android:onClick="recoverWhich"
+        android:layout_below="@+id/forgotten_username_lbl"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/forgotten_pw_lbl"
+        android:layout_alignRight="@+id/button_sign_in"
+        android:layout_alignEnd="@+id/button_sign_in"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/radioButton"
+            android:layout_alignTop="@+id/forgotten_username_lbl"
+            android:layout_above="@+id/button_sign_in"
+            android:layout_alignRight="@+id/radioButton"
+            android:layout_alignEnd="@+id/radioButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/radioButton2"
+            android:layout_alignTop="@+id/forgotten_pw_lbl"
+            android:layout_alignBottom="@+id/forgotten_pw_lbl"
+            android:layout_alignRight="@+id/button_sign_in"
+            android:layout_alignEnd="@+id/button_sign_in" />
+    </RadioGroup>
+
+
+
+</RelativeLayout>
